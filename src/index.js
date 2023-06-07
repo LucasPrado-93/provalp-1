@@ -7,8 +7,6 @@ import {
 (async () => {
   const db = await openDB();
 
-  console.log("caiu aqui");
-
   let resultado1 = await db.all(SELECT_DESAFIO_UM);
   resultado1.map((e) => {
     console.log(e);
